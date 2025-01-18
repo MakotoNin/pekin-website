@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEKIN 中国家庭料理 | メニュー</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .menu-link {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            text-decoration: none;
+            font-size: 18px;
+            color: #333;
+        }
+        .menu-link:hover {
+            color: #ff5722;
+        }
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .menu-item {
+            text-align: center;
+        }
+        .menu-item img {
+            width: 250px; /* 画像を大きく */
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .menu-item img:hover {
+            transform: scale(1.1);
+        }
+        #chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 400px;
+            height: 600px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border: none;
+            z-index: 1000;
+            display: none;
+        }
+        #chatbot-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            text-align: center;
+            line-height: 60px;
+            cursor: pointer;
+            z-index: 1001;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .horizontal-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PEKIN メインメニュー (画面右下になんでも質問できるPEKIN AI が無料で使える！)</h1>    
+        <h2>他にもPEKINにしかない珍しいメニューが盛りだくさん！（牛の腸やアルコール度数脅威の６０％のお酒など！！！）　
+        <h3>価格５００円～（メニューの値段は店内でのみ閲覧できます）</h3>
+        
+        　
+        
+    </header>
+
+    <section id="menu"
+        <div class="image-grid">
+            <a href="#dimsum" class="menu-link">
+                <div class="menu-item">
+                    <img src="assets/images/Pan-Fried Dumplings.jpg" alt="点心">
+                    <p>点心</p>
+                </div>
+            </a>
+            <a href="#noodles" class="menu-link">
+                <div class="menu-item">
+                    <img src="assets/images/Pekin Ramen.jpg" alt="麺">
+                    <p>麺</p>
+                </div>
+            </a>
+            <a href="#rice" class="menu-link">
+                <div class="menu-item">
+                    <img src="assets/images/Fried Rice.jpg" alt="ご飯丼もの">
+                    <p>ご飯丼もの</p>
+                </div>
+            </a>
+            <a href="#dishes" class="menu-link">
+                <div class="menu-item">
+                    <img src="assets/images/MapoTofu.jpg" alt="一品料理">
+                    <p>一品料理</p>
+                </div>
+            </a>
+            <a href="#hotpot" class="menu-link">
+                <div class="menu-item">
+                    <img src="assets/images/MildHotpot.jpg"火鍋">
+                    <p>火鍋</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- 点心 -->
+        <!-- 点心 -->
+<section id="dimsum">
+    <h2>点心</h2>
+    <p>肉汁溢れる味付き餃子！</p>
+    <div class="image-grid">
+        <div class="menu-item">
+            <div class="menu-name">焼き餃子</div>
+            <img src="assets/images/Pan-Fried Dumplings.jpg" alt="焼き餃子">
+        </div>
+        <div class="menu-item">
+            <div class="menu-name">水餃子</div>
+            <img src="assets/images/Boiled Dumplings.jpg" alt="水餃子">
+        </div>
+    </div>
+</section>
+
+
+        <!-- 麺 -->
+        <section id="noodles">
+            <h2>麺</h2>
+            <div class="image-grid">
+                <div class="menu-item">
+                    <div class="menu-name">北京ラーメン</div>
+                    <img src="assets/images/Pekin Ramen.jpg" alt="北京ラーメン">
+                </div>
+                <div class="menu-item">
+                    <div class="menu-name">塩ラーメン</div>
+                    <img src="assets/images/Salt Ramen.jpg" alt="塩ラーメン">
+                </div>
+                <div class="menu-item">
+                    <div class="menu-name">四川花椒麺</div>
+                    <img src="assets/images/Sichuan Pepper Noodles.jpg" alt="四川花椒麺">
+                </div>
+                <div class="menu-item">
+                    <div class="menu-name">トマト卵麺</div>
+                    <img src="assets/images/Stir-Fried Tomato and Egg Noodle Bowl.jpg" alt="トマト卵麺">
+                </div>
+            </div>
+        </section>
+
+        <!-- ご飯丼もの -->
+        <section id="rice">
+            <h2>ご飯丼もの</h2>
+            <div class="image-grid">
+                <div class="menu-item">
+                    <div class="menu-name">チャーハン</div>
+                    <img src="assets/images/Fried Rice.jpg" alt="チャーハン">
+                </div>
+                <div class="menu-item">
+                    <div class="menu-name">エビチャーハン</div>
+                    <img src="assets/images/Fried Rice with prawns.jpg" alt="エビチャーハン">
+                </div>
+                <div class="menu-item">
+                    <div class="menu-name">五目チャーハン</div>
+                    <img src="assets/images/Special Mixed Fried Rice.jpg" alt="五目チャーハン">
+                </div>
+            </div>
+        </section>
+
+        <!-- 一品料理 -->
+        <section id="dishes">
+            <h2>一品料理</h2>
+            <div class="image-grid">
+                <div class="menu-item">
+                    <div class="menu-name">麻婆豆腐</div>
+                    <img src="assets/images/MapoTofu.jpg" alt="麻婆豆腐">
+                </div>
+                <div class="menu-item">
+                    <div class="menu-name">エビチリ</div>
+                    <img src="assets/images/EbiChili.jpg" alt="エビチリ">
+                </div>
+                <div class="menu-item">
+                    <div class="menu-name">酢豚</div>
+                    <img src="assets/images/Sweet-and-sour pork.jpg" alt="酢豚">
+                </div>
+                <div class="menu-item">
+                    <div class="menu-name">回鍋肉</div>
+                    <img src="assets/images/Twice-Cooked Pork.jpg" alt="回鍋肉">
+                </div>
+            </div>
+        </section>
+
+        <!-- 火鍋 -->
+        <section id="hotpot">
+            <h2>火鍋</h2>
+            <div class="horizontal-images">
+                <img src="assets/images/SpicyHotpot.jpg" alt="麻辣火鍋">
+                <img src="assets/images/MildHotpot.jpg" alt="白湯火鍋">
+            </div>
+        </section>
+    </section>
+
+    <!-- チャットボット -->
+    <div style="text-align: center; margin-bottom: 10px;">
+        <span style="font-size: 18px; font-weight: bold; color: #333;">
+            なんでも質問できるPEKIN AI
+        </span>
+    </div>
+    <iframe
+        id="chatbot-container"
+        src="https://udify.app/chatbot/yifpd59dVEblu61V"
+        style="width: 100%; height: 100%; min-height: 700px; display: none;"
+        frameborder="0"
+        allow="microphone">
+    </iframe>
+
+    <script>
+     window.difyChatbotConfig = {
+      token: 'yifpd59dVEblu61V'
+     }
+    </script>
+    <script
+     src="https://udify.app/embed.min.js"
+     id="yifpd59dVEblu61V"
+     defer>
+    </script>
+    <style>
+      #dify-chatbot-bubble-button {
+        background-color: #1C64F2 !important;
+      }
+      #dify-chatbot-bubble-window {
+        width: 24rem !important;
+        height: 40rem !important;
+      }
+    </style>
+
+    <footer>　
+        <p>© PEKIN中国家庭料理</p>
+        <p>
+            <strong>店舗の場所:</strong> 
+            <a href="https://maps.app.goo.gl/KMESHJiDFYkWCM9g6?g_st=com.google.maps.preview.copy" target="_blank">
+                Googleマップで見る
+            </a>
+        </p>
+        <p>
+            <strong>電話番号:</strong> 
+            <a href="tel:090-2935-6688">090-2935-6688</a>
+        </p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // ページ内リンクのスムーズスクロール
+            const links = document.querySelectorAll('nav ul li a');
+
+            links.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = e.target.getAttribute('href').substring(1);
+                    document.getElementById(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // チャットボットのトグル機能
+            const chatbotToggle = document.getElementById('chatbot-toggle');
+            const chatbotContainer = document.getElementById('chatbot-container');
+
+            chatbotToggle?.addEventListener('click', () => {
+                chatbotContainer.style.display = chatbotContainer.style.display === 'none' ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>
+ 
